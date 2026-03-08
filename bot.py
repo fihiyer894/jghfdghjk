@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ======= Конфігурація =======
-BOT_TOKEN = "8628438853:AAGab5K9QWdPjnt1VdUulMYdf7v03lN_dzA"
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 SERVER_URL = "https://goto10k-l0dh.onrender.com"
 ADMIN_ID = int(os.getenv("ADMIN_ID", "0"))
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
